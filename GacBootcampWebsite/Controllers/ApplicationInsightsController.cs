@@ -46,7 +46,9 @@ namespace GacBootcampWebsite.Controllers
             if (!System.IO.File.Exists(pathToLog))
                 throw new FileNotFoundException($"Can not find the file on path {pathToLog}");
 
-            await System.IO.File.AppendAllTextAsync(pathToLog, entry);
+            var lines = new List<string>() { entry };
+
+            await System.IO.File.AppendAllLinesAsync(pathToLog, lines);
         }
 
         private async Task<List<string>> GetLogEntries()
