@@ -5,7 +5,7 @@
 
 ## Prerequisites:
 1. Visual Studio or VS Code
-2. Azure App Serivce extension installed for VS Code (if used)
+2. Azure App Service extension installed for VS Code (if used)
 3. Azure Subscription - Azure Passes is available, just ask.
 4. Git installed 
 5. .NET Core 2.1
